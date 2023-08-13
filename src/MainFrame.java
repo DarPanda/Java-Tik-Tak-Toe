@@ -17,10 +17,12 @@ public class MainFrame extends JFrame{
     public MainFrame(){
         this.add(new GamePanel());
         this.add(new Menu());
+        
         this.setTitle("Tic-Tak-Toe");
         this.setResizable(false);
         this.pack();
-        this.setBackground(Color.BLACK);
+        this.setSize(800,800);
+        
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
